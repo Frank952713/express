@@ -1,12 +1,14 @@
-package com.work.boot.dao;
+package com.work.boot.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.work.boot.pojo.User;
+import org.springframework.stereotype.Repository;
 
 /**
  * Author:WEIR
  * Date:2022/9/18 11:30
  * Description:
  */
-public interface UserDao extends BaseMapper<User> {
+@Repository
+public interface UserMapper extends BaseMapper<User> {
 }

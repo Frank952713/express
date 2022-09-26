@@ -1,8 +1,6 @@
 package com.work.boot;
 
-import com.baomidou.mybatisplus.core.conditions.Wrapper;
-import com.work.boot.dao.UserDao;
-import com.work.boot.pojo.User;
+import com.work.boot.mapper.UserMapper;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,7 +13,7 @@ class ExpressApplicationTests {
     @Autowired
     JdbcTemplate jdbcTemplate;
     @Autowired
-    UserDao userDao;
+    UserMapper userDao;
 
     @Test
     void contextLoads() {
